@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>  
+    <title>Anothai</title>
+</html>
+<head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-image: url('rmutt.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid white;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+#inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid white;
+}
+#inputbox label{
+    position: absolute;
+    top: 0%;
+    left: 5px;
+    transform: translateY(-50%);
+    color:white;
+    font-size: 1em;
+    pointer-events: none;
+    
+}
+#inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: white;
+}
+#inputbox ion-icon{
+    position: absolute;
+    right: 20px;
+    color: white;
+    font-size: 1.2em;
+    top: 20px;
+}
+#forget{
+    margin: -15px 0 px;
+    font-size: .9em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-70%);
+}
+#forget label input{
+    margin-right: 3px;
+    
+}
+#inputbox{
+    color: white;
+    text-decoration: none;
+}
+#forget label a{
+    color: red;
+    text-decoration: none;
+    
+}
+#forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+#register{
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+#register p a{
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+}
+#register p a:hover{
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+    <section>
+        <div id="form-box">
+            <div id="form-value">
+                <form action="">
+                    <h2>Anothai Login</h2>
+                    <div id="inputbox">
+                        <ion-icon name="folder-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div id="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div id="forget">
+                        <label for=""><input type="checkbox">Remember Me <a href="#">Forget Password</a></label>
+                    </div>
+                    <button>Log in</button>
+                    <div id="register">
+                        <p>Don't have a account <a href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
